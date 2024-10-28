@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #F1F1F2;
+}
+
+.sell_on_jumia img {
+    width: 20px;
+    height: auto;
+}
+
+.sell_on_jumia a {
+    text-decoration: none;
+    color: #FEA500;
+}
+
+.pay_jumia_logo img {
+    width: 100px;
+    height: auto;
+}

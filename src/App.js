@@ -1,24 +1,35 @@
 import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import "./App.css"
+
+
+const Home = React.lazy(() => import("./pages/Home"))
+const Ads = React.lazy(() => import("./pages/Ads"))
+const Flashsales = React.lazy(() => import("./pages/Flashsales"))
+const Sidebar = React.lazy(() => import("./pages/Sidebar"))
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <React.Suspense>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/Ads' element={<Ads />} />
+            <Route path='/Flashsales' element={<Flashsales />} />
+            <Route path='/Sidebar' element={<Sidebar />} />
+            
+          </Routes>
+        </BrowserRouter>
+      </React.Suspense>
+
+    </div >
   );
 }
 

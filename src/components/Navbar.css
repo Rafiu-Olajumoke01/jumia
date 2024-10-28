@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container_fluid {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.parent {
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+
+.jumialogo img {
+    width: 150px;
+    height: auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+.jumialogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 80px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 80px;
+    position: relative;
+}
+
+.search input {
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search input::placeholder {
+    font-weight: bold;
+}
+
+.search button {
+    width: 20%;
+    height: 50px;
+}
+
+.search_icon {
+    position: absolute;
+    top: 35%;
+    left: 10px;
+}
+
+button {
+    background-color: #FF9300;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+    transition: .7s;
+}
+
+button:hover {
+    background-color: #E07E1B;
+}
+
+.cart {
+    width: 25%;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account,
+.help,
+.addToCart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.account:hover {
+    color: #FF9300;
+    transition: .7s ease-in-out;
+}
+
+.help:hover {
+    color: #FF9300;
+    transition: .7s ease-in-out;
+}
+
+.addToCart:hover {
+    color: #FF9300;
+    transition: .7s ease-in-out;
+}
+
+@media (max-width: 525px) {
+
+    .parent {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .jumialogo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .hamburger {
+        display: block;
+        size: 50px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .help {
+        display: none;
+    }
+
+    .account span {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .addToCart span {
+        display: none;
+    }
+
+    .cart {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

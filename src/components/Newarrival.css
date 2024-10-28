@@ -1,10 +1,12 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #F1F1F2;
+.arrival img{
+    width: 100%;
+    height: auto;
+    margin: auto;
 }

@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.sidebarComponents_container {
+    width: 100%;
+    height: 60vh;
+    background-color: #fff;
+    padding: 5px;
+    line-height: 35px;
+    box-shadow: 1px 1px #fff;
+    border-radius: 5px;
+}
+
+.sidebarComponents a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+.sidebarComponents a:hover {
+    color: #FF9300;
+}
+
+
+
+@media (max-width: 525px) {
+
+    .sidebarComponents_container {
+        display: none;
+    }
+
+    
+}
